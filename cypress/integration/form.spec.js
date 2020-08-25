@@ -7,12 +7,12 @@ describe("Form test", () => {
           .type("Molly")
           .should("have.value", "Molly");
 
-        cy.get('input{name="email"]')
+        cy.get('input[name="email"]')
           .type("molly@dev.dev")
           .should("have.value", "molly@dev.dev");
 
         cy.get("textarea")
           .type("Mind you if I ask some silly question?")
-          .should("have.value", "mind you if I ask some silly question?");  
+          .should("have.value", "Mind you if I ask some silly question?");  
     });
 });
